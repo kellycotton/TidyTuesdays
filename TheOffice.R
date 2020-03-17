@@ -37,10 +37,14 @@ ggplot(word.freq, aes(x=reorder(word,n),y=n)) +
 
 # Episode ratings----
 # Plot IMDB ratings over episodes 
+#png("rating.png",units="in",width=5,height=7,res=300)
+#print (
 ggplot(office_ratings, aes(season, episode, fill = imdb_rating)) + 
   geom_tile(colour = "white") + 
   scale_fill_viridis(option="magma") +
   labs(x = "Season", y ="Episode" ,title ="IMDB Ratings of The Office",fill="Rating")
+#)
+#dev.off()
 
 # Word sentiment----
 # Calculate sentiment of words based on the Bing lexicon
@@ -61,6 +65,8 @@ ggplot(office.sentiment, aes(sentiment)) +
   labs(x = "Mean sentiment rating across season", y ="Density", title ="Sentiment Ratings Across Seasons", color="Season")
 
 # Plot sentiment vs. IMDB rating
+#png("ratingsentiment.png",units="in",width=7,height=5,res=300)
+#print (
 ggplot(ratings.sentiment, aes(x=sentiment,y=imdb_rating,group=season,color=season)) +
   geom_jitter() +
   scale_color_viridis(option="magma",discrete = TRUE) +
@@ -70,6 +76,8 @@ ggplot(ratings.sentiment, aes(x=sentiment,y=imdb_rating,group=season,color=seaso
                    box.padding   = 0.35, 
                    point.padding = 0.5,
                    segment.color = 'grey50') 
+#)
+#dev.off()
 
 # Characters line frequency----
 # Find Top 20 characters by number of lines
