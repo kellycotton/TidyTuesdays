@@ -31,9 +31,13 @@ word.freq <- tidy.token.mydata %>%
   filter(n>400)
 
 # Plot most frequent words 
+#png("wordfreq.png",units="in",width=6,height=6,res=300)
+#print (
 ggplot(word.freq, aes(x=reorder(word,n),y=n)) +
   geom_bar(stat="identity") + coord_flip() +
   labs(x = "Word", y ="Frequency of Word" ,title ="Most Frequently Used Words")
+#)
+#dev.off()
 
 # Episode ratings----
 # Plot IMDB ratings over episodes 
@@ -59,10 +63,14 @@ colnames(office.sentiment)[2] <- "episode"
 ratings.sentiment <- merge(office.sentiment, office_ratings, by = c("season","episode"))
 
 # Plot sentiment across seasons
+#png("sentiment.png",units="in",width=7,height=5,res=300)
+#print (
 ggplot(office.sentiment, aes(sentiment)) +
   geom_density(aes(color=season)) +
   scale_color_viridis(option="magma",discrete = TRUE) +
   labs(x = "Mean sentiment rating across season", y ="Density", title ="Sentiment Ratings Across Seasons", color="Season")
+#)
+#dev.off()
 
 # Plot sentiment vs. IMDB rating
 #png("ratingsentiment.png",units="in",width=7,height=5,res=300)
@@ -94,10 +102,14 @@ characters <- mydata %>%
   count(sort=TRUE)  
 
 # Plot most-speaking characters
+#png("charfreq.png",units="in",width=6,height=6,res=300)
+#print (
 ggplot(subset(characters, character %in% characters.top20),aes(x=reorder(character,n),y=n)) +
   geom_bar(stat="identity") +
   coord_flip() +
   labs(x = "Character", y ="Number of Lines" ,title ="Number of Lines by Character") 
+#)
+#dev.off()
 
 # Character sentiment----
 # Calculate average sentiment for each character
@@ -110,10 +122,14 @@ character.sentiment <- tidy.token.mydata %>%
   mutate(sentiment = positive - negative)
 
 # Plot sentiment for each character (average per season)
+#png("charsentiment.png",units="in",width=6,height=6,res=300)
+#print (
 ggplot(character.sentiment, aes(x=reorder(character,sentiment),y=sentiment)) +
   geom_boxplot() + 
   coord_flip() +
   labs(x = "Character", y ="Sentiment Rating" ,title ="Character Sentiments") 
+#)
+#dev.off()
 
 # Angela's love life
 # Calculate number of times the State Senator is mentioned
@@ -122,10 +138,14 @@ angelas.senator <- tidy.token.mydata %>%
   count(character)
 
 # Plot who talks about the State Senator
+#png("senator.png",units="in",width=6,height=6,res=300)
+#print (
 ggplot(angelas.senator,aes(x=reorder(character,n),y=n)) +
   geom_bar(stat="identity") + 
   coord_flip() +
   labs(x = "Character", y ="Number of Senator Mentions" ,title ="Who talks about the state senator?") 
+#)
+#dev.off()
 
 # Calculate who Angela talks about: the State Senator or Dwight
 angela.love <-  tidy.token.mydata %>%
@@ -133,8 +153,11 @@ angela.love <-  tidy.token.mydata %>%
   filter(str_detect(word, "dwight$|senator$")) 
 
 # Plot who Angela talks about
+#png("angelalove.png",units="in",width=6,height=6,res=300)
+#print (
 ggplot(angela.love, aes(word)) +
   geom_bar() + 
   labs(x = "Angela's Lover", y ="Number of Mentions" ,title ="Who does Angela talk about?") 
-
+#)
+#dev.off()
 
