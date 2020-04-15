@@ -63,7 +63,7 @@ ggplot(subset(rankings,gender=="female"), aes(x=year, y=reorder(artist,points), 
 # Gathering lyrics for the top 50 songs and cleaning the input because the Genius package 
 # looks for fairly specific input (like Fugees, not The Fugees!)
 # This is a pretty messy section, I would really like to clean it up
-artist_songs <- rankings[1:50,c(3,2)] # Only the top 50 songs
+artist_songs <- rankings[c(3,2)] 
 artist_songs$artist <- str_replace(artist_songs$artist,"&","and") 
 artist_songs$artist <- str_remove(artist_songs$artist,"ft.*") # Remove the ft artists so the songs are found on Genius
 artist_songs$artist <- removePunctuation(artist_songs$artist)
@@ -106,15 +106,26 @@ totalartist.count <- artist.count %>%
   summarise(total=sum(n))
 
 # Plot the songs with the highest word counts
-png("longsongs.png",units="in",width=8.5,height=7,res=300)
-print (
-ggplot(totalword.count, aes(x=reorder(title,total),y=total)) +
+#png("longsongs.png",units="in",width=9,height=7,res=300)
+#print (
+ggplot(top_n(totalword.count,50), aes(x=reorder(title,total),y=total)) +
   geom_bar(stat="identity", fill="#1380A1") + coord_flip() +
-  labs(x = "Song", y ="Number of Words" ,title ="Word Count of Top 50 Rap Songs") +
+  labs(x = "Song", y ="Number of Words" ,title ="Word Count of 50 Longest Songs") +
   bbc_style() +
   theme(axis.text=element_text(size=9)) 
-)
-dev.off()
+#)
+#dev.off()
+
+# Plot the songs with the lowest word counts
+#png("shortsongs.png",units="in",width=8.5,height=7,res=300)
+#print (
+  ggplot(top_n(totalword.count,-50), aes(x=reorder(title,total),y=total)) +
+    geom_bar(stat="identity", fill="#1380A1") + coord_flip() +
+    labs(x = "Song", y ="Number of Words" ,title ="Word Count of 50 Shortest Songs") +
+    bbc_style() +
+    theme(axis.text=element_text(size=9)) 
+#)
+#dev.off()
 
 # Plot the term frequency - inverse document frequency (TF-IDF) for each song and artist
 word.count <- left_join(word.count,totalword.count)
@@ -126,30 +137,50 @@ word.count <- word.count %>%
 artist.count <- artist.count %>%
   bind_tf_idf(word,artist,n)
 
-png("tfidfsong.png",units="in",width=9,height=8,res=300)
-print (
+#png("tfidflong.png",units="in",width=12,height=9,res=300)
+#print (
 word.count %>%
-  subset(total>1000) %>% # Plot only the songs with > 1000 words
+  subset(total>1330) %>% # Plot only the songs with > 1330 words
   arrange(desc(tf_idf)) %>%
   mutate(word = factor(word, levels = rev(unique(word)))) %>% 
   group_by(title) %>% 
-  top_n(15) %>%
+  top_n(10) %>%
   ungroup() %>%
   ggplot(aes(reorder(word,tf_idf), tf_idf, fill = title)) + # I wasn't able to get this ordered very wellc
   geom_col(show.legend = FALSE) +
   scale_fill_viridis(discrete = TRUE) +
-  labs(x = NULL, title = "Most Unique Words of Longest Songs", subtitle = "TF-IDF for songs with > 1000 words") +
+  labs(x = NULL, title = "Most Unique Words of Longest Songs", subtitle = "TF-IDF for songs with > 1330 words") +
   facet_wrap(~title, ncol = 2, scales = "free") +
   coord_flip() +
   bbc_style() +
   theme(axis.text=element_text(size=10)) 
-)
-dev.off()
+#)
+#dev.off()
 
-png("tfidfartist.png",units="in",width=9,height=8,res=300)
-print (
+#png("tfidfshort.png",units="in",width=11,height=13,res=300)
+#print (
+word.count %>%
+  subset(total<335) %>% # Plot only the songs with < 335 words
+  arrange(desc(tf_idf)) %>%
+  mutate(word = factor(word, levels = rev(unique(word)))) %>% 
+  group_by(title) %>% 
+  top_n(10) %>%
+  ungroup() %>%
+  ggplot(aes(reorder(word,tf_idf), tf_idf, fill = title)) + # I wasn't able to get this ordered very wellc
+  geom_col(show.legend = FALSE) +
+  scale_fill_viridis(discrete = TRUE) +
+  labs(x = NULL, title = "Most Unique Words of Shortest Songs", subtitle = "TF-IDF for songs with < 335 words") +
+  facet_wrap(~title, ncol = 2, scales = "free") +
+  coord_flip() +
+  bbc_style() +
+  theme(axis.text=element_text(size=10)) 
+#)
+#dev.off()
+
+#png("tfidfartist.png",units="in",width=9,height=8,res=300)
+#print (
 artist.count %>%
-  subset(total>1300) %>%
+  subset(total>4000) %>%
   arrange(desc(tf_idf)) %>%
   mutate(word = factor(word, levels = rev(unique(word)))) %>% 
   group_by(artist) %>% 
@@ -158,14 +189,14 @@ artist.count %>%
   ggplot(aes(word, tf_idf, fill = artist)) +
   geom_col(show.legend = FALSE) +
   scale_fill_viridis(discrete = TRUE) +
-  labs(x = NULL, title = "Most Unique Words by Artist", subtitle = "TF-IDF for artists with > 1300 words") +
+  labs(x = NULL, title = "Most Unique Words by Artist", subtitle = "TF-IDF for artists with > 4000 words") +
   facet_wrap(~artist, ncol = 2, scales = "free") +
   coord_flip() +
   bbc_style() +
   theme(axis.text=element_text(size=8), strip.text.x = element_text(size = 15),
         plot.title=element_text(size=20), plot.subtitle = element_text(size=17)) 
-)
-dev.off()
+#)
+#dev.off()
 
 # Sentiment analysis----
 lyrics.sentiment <- token.lyrics %>%
@@ -176,8 +207,8 @@ lyrics.sentiment <- token.lyrics %>%
   mutate(sentiment = positive - negative)
 
 # Plot sentiment for each artist
-png("sentimentartist.png",units="in",width=9,height=8,res=300)
-print (
+#png("sentimentartist.png",units="in",width=10,height=19,res=300)
+#print (
 lyrics.sentiment %>% 
   group_by(artist) %>%
   summarise(sentiment = sum(sentiment)) %>%
@@ -192,12 +223,12 @@ lyrics.sentiment %>%
   labs(title="Overall Sentiment by Artist",subtitle="Most Artists Tend to be Negative") +
   bbc_style() +
   theme(axis.text=element_text(size=10)) 
-)
-dev.off()
+#)
+#dev.off()
 
 # Plot sentiment for each song
-png("sentimentsong.png",units="in",width=9,height=8,res=300)
-print (
+#png("sentimentsong.png",units="in",width=13,height=30,res=300)
+#print (
 lyrics.sentiment %>% 
   group_by(index) %>%
   summarise(sentiment = sum(sentiment)) %>%
@@ -212,8 +243,26 @@ lyrics.sentiment %>%
   labs(title="Overall Sentiment by Song",subtitle="Most Songs Are Negative") +
   bbc_style() +
   theme(axis.text=element_text(size=10)) 
-)
-dev.off()
+#)
+#dev.off()
+#png("sentimentsong.png",units="in",width=13,height=10,res=300)
+#print (
+lyrics.sentiment %>% 
+  group_by(index) %>%
+  summarise(sentiment = sum(sentiment)) %>%
+  ggplot(aes(x=reorder(index,sentiment),y=sentiment,label=sentiment)) +
+  geom_point(stat="identity",fill="black") + 
+  labs(title="Overall Sentiment by Song",subtitle="Most Songs Are Negative") +
+  geom_text_repel(aes(label = paste(index,artist, sep=" - ")),
+                  data = subset(lyrics.sentiment, (sentiment < -70 | sentiment > 25 | sentiment == 0)),
+                  box.padding   = 1, 
+                  point.padding = .8,
+                  segment.color = 'grey50',
+                  color="black") + 
+  bbc_style() +
+  theme(axis.text.x = element_blank()) 
+#)
+#dev.off()
 
 
   
