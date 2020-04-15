@@ -2,7 +2,6 @@
 library(tidyverse)
 library(viridis)
 library(dplyr)
-library(viridis)
 library(ggrepel)
 library(usmap)
 library(scales)
@@ -177,4 +176,4 @@ ggplot(ufo_beer) + aes(x=mean_barrels,y=sightings,color=region) +
                   segment.color = 'grey50',
                   color="black") 
 )
-dev.off()
+  dev.off()
