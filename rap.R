@@ -12,7 +12,7 @@ rankings <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/t
 
 # Scores over time----
 # Plot overall scores over time for each song
-#png("rapratings.png",units="in",width=8,height=7,res=300)
+#png("Plots/rapratings.png",units="in",width=8,height=7,res=300)
 #print (
 ggplot(rankings) + aes(x=year,y=points) +
   geom_point(color="#1380A1",alpha=.6,size=3) + 
@@ -28,6 +28,7 @@ ggplot(rankings) + aes(x=year,y=points) +
 #dev.off()
 
 # Plotting sum of total scores for each year
+#png("Plots/rapratings_tot.png",units="in",width=8,height=7,res=300)
 rankings %>%
   group_by(year) %>%
   summarise(points = sum(points)) %>%
@@ -35,9 +36,11 @@ rankings %>%
   geom_bar(stat="identity",fill="#FAAB18") +
   labs(title = "Total Score for All Songs") +
   bbc_style()
+#dev.off()
 
 # Featured artists----
-# Plotting the difference in scores for songs with features and without  
+# Plotting the difference in scores for songs with features and without 
+#png("Plots/features.png",units="in",width=10,height=7,res=300)
 rankings %>%
   mutate(feature = str_detect(artist," ft. ")) %>%
   group_by(feature,year) %>%
@@ -49,15 +52,18 @@ rankings %>%
   labs(title="Scores for Songs With and Without Features") +
   guides(fill = guide_legend(reverse = TRUE)) +
   bbc_style()
+#dev.off()
 
 # Female artists----
 # Plotting gender data, wanted to do something with female artists over time but I'm disappointed with this plot
 # There aren't many female artists to begin with!
+#png("Plots/female.png",units="in",width=11,height=7,res=300)
 ggplot(subset(rankings,gender=="female"), aes(x=year, y=reorder(artist,points), fill = points)) + 
   geom_tile() + 
   scale_fill_viridis() +
   labs(title = "Scores for Female Artists Over Time") +
   bbc_style()
+#dev.off()
 
 # Get and clean lyric data----
 # Gathering lyrics for the top 50 songs and cleaning the input because the Genius package 

@@ -23,15 +23,16 @@ arrows <-
     y2 = c(77, 25, 26)
   )
 
-# Plot age of first and last mission by gender
-png("ageplot.png",units="in",width=6,height=6,res=300)
+# Plots----
+# Age of first and last mission by gender
+#png("ageplot.png",units="in",width=6,height=6,res=300)
 astronauts %>%
-  group_by(number) %>%
-  slice(c(1,n())) %>%
+  group_by(number) %>% # number = astronaut number
+  slice(c(1,n())) %>% # select the first and last entries for each astronaut
   ungroup() %>%
-  distinct(id,.keep_all = TRUE) %>%
-  mutate(age= year_of_mission - year_of_birth) %>%
-  mutate(mission = ifelse(mission_number>1,"Last","First")) %>%
+  distinct(id,.keep_all = TRUE) %>% # not everyone has multiple missions and the previous step adds duplicates, so keep only the unique IDs 
+  mutate(age= year_of_mission - year_of_birth) %>% # create a new age variable 
+  mutate(mission = ifelse(mission_number>1,"Last","First")) %>% # rename first and last missions
   ggplot(aes(x=mission,y=age,group=sex,col=sex)) + 
   geom_point(aes(color=sex),position=position_dodge(0.3),alpha=.2, size = 2.5) +
   stat_summary(fun = mean, geom = "point", size = 5,position=position_dodge(0.3)) +
@@ -61,6 +62,4 @@ astronauts %>%
     color = "gray20", curvature = -0.3, 
     inherit.aes = FALSE
   ) 
-dev.off()
-  
-
+#dev.off()
