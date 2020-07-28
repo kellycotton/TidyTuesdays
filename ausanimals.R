@@ -8,7 +8,6 @@ library(RColorBrewer)
 
 
 # Get data
-tuesdata <- tidytuesdayR::tt_load('2020-07-21')
 tuesdata <- tidytuesdayR::tt_load(2020, week = 30)
 
 animal_outcomes <- tuesdata$animal_outcomes

@@ -9,7 +9,6 @@ font_add_google("Montserrat","Montserrat")
 showtext_auto()
 
 # Get data
-tuesdata <- tidytuesdayR::tt_load('2020-07-14')
 tuesdata <- tidytuesdayR::tt_load(2020, week = 29)
 
 astronauts <- tuesdata$astronauts 
