@@ -34,4 +34,19 @@ Learning and sharing my R progress.
 
 [futurevisions](https://github.com/JoeyStanley/futurevisions)
 
+[hrbrthemes](https://github.com/hrbrmstr/hrbrthemes)
+
+[geofacet](https://github.com/hafen/geofacet)
+
+[tricolore](https://github.com/jschoeley/tricolore)
+
+[ggtern](http://www.ggtern.com/)
+
+[ggdark](https://github.com/nsgrantham/ggdark)
+
+[skimr](https://github.com/ropensci/skimr)
+
+[leaflet](https://rstudio.github.io/leaflet/)
+
+[lemon](https://github.com/stefanedwards/lemon)
 
