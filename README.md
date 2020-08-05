@@ -24,10 +24,14 @@ Learning and sharing my R progress.
 
 [wesanderson](https://github.com/karthik/wesanderson)
 
+[patchwork](https://github.com/thomasp85/patchwork)
+
+[ggalt](https://yonicd.github.io/ggalt/index.html)
+
 
 
 **Packages I haven't used yet but think are neat:**
 
 [futurevisions](https://github.com/JoeyStanley/futurevisions)
 
-[patchwork](https://github.com/thomasp85/patchwork)
+
