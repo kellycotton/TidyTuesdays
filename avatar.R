@@ -40,7 +40,8 @@ token.avatar %>%
                subtitle.size = 10, 
                text.size = 8, 
                title.size = 15) +
-  theme(panel.grid.major.y = element_blank(), 
+  theme(plot.caption = element_text(family = "sans"),
+        panel.grid.major.y = element_blank(), 
         panel.grid.minor = element_blank())
 
 # Top characters
@@ -74,7 +75,8 @@ avatar %>%
                subtitle.size = 10, 
                text.size = 8, 
                title.size = 15) +
-  theme(panel.grid.major.y = element_blank(), 
+  theme(plot.caption = element_text(family = "sans"),
+        panel.grid.major.y = element_blank(), 
         panel.grid.minor = element_blank())
 
 # By book
@@ -88,24 +90,25 @@ avatar %>%
   mutate(nation = ifelse(character == "Aang", "Air", 
                          ifelse(character %in% c("Sokka", "Katara"), "Water", 
                                 ifelse(character %in% c("Zuko", "Iroh", "Azula", "Zhao"), "Fire", "Earth")))) %>%
-  ggplot(aes(x = factor(book_num), y = percent, group = character, color = nation)) +
-  geom_point() + geom_line() +
-  scale_color_manual(values = c("#ff9933", "#4C7022", "#a10000",  "#174D79")) +
+  ggplot(aes(x = factor(book_num), y = percent, group = character, color = character)) +
+  geom_point(size = 4) + geom_line(size = 1.5) +
+  scale_color_avatar(palette = "FireNation") +
   labs(x = element_blank(), y = element_blank(),
        title = "Character Lines in Avatar: The Last Airbender",
        subtitle = "Number of lines per character per season",
        caption = "Created by @kllycttn, Data from Avatar Wiki, #TidyTuesday") +
-  scale_x_discrete(expand = expansion(mult = c(0, .1))) +
-  scale_y_continuous(expand = expansion(mult = c(0, .1)),
+  scale_y_continuous(expand = expansion(mult = c(.1, .1)),
                      breaks = scales::breaks_pretty(n = 5)) +
-  theme_avatar(legend.position = "none",
-               title.font = "Slayer",
+  theme_avatar(title.font = "Slayer",
                text.font = "Slayer", 
                subtitle.size = 10, 
                text.size = 8, 
                title.size = 15) +
-  theme(panel.grid.major.y = element_blank(), 
+  theme(plot.caption = element_text(family = "sans"),
+        axis.text.y = element_blank(),
+        panel.grid.major.y = element_blank(), 
         panel.grid.minor = element_blank())
+
 
 # n grams----
 trigram.avatar <- avatar %>%
