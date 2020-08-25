@@ -3,7 +3,6 @@ library(tidyverse)
 library(tidytuesdayR)
 library(ggalt)
 library(hrbrthemes)
-library(wesanderson)
 library(patchwork)
 
 # Get data
@@ -60,7 +59,7 @@ length(unique(all_ingredients$ingredient))
 p1 <- top_ingredients %>%
   slice_max(order_by = n, n = 20) %>% 
   ggplot(aes(x = reorder(ingredient, n), y = n)) +
-  geom_lollipop(point.colour = "#5BBCD6", color = "#5BBCD6", point.size = 5) + 
+  geom_lollipop(point.colour = "#5BBCD6", color = "#5BBCD6", point.size = 5) + # Color palette entered manually, but taken from the wesanderson palette Darjeeling1
   coord_flip() +
   theme_ipsum_es(grid="") +
   labs(title = "All Rounds") +
@@ -136,3 +135,5 @@ p1/(p2 + p3 + p4) +
   subtitle = "In 567 episodes over 45 seasons, 4173 unique ingredients have been featured.",
   caption = "Created by @kllycttn, Data from Kaggle, #TidyTuesday",
   theme = theme_ipsum_es()) 
+
+ggsave("Plots/chopped.png", dpi = 300, height = 8, width = 16, units = "in")
