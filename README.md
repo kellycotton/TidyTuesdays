@@ -30,13 +30,14 @@ Learning and sharing my R progress.
 
 [tvthemes](https://ryo-n7.github.io/2019-05-16-introducing-tvthemes-package/)
 
-
-
-**Packages I haven't used yet but think are neat:**
-
 [futurevisions](https://github.com/JoeyStanley/futurevisions)
 
 [hrbrthemes](https://github.com/hrbrmstr/hrbrthemes)
+
+[skimr](https://github.com/ropensci/skimr)
+
+
+**Packages I haven't used yet but think are neat:**
 
 [geofacet](https://github.com/hafen/geofacet)
 
@@ -46,9 +47,9 @@ Learning and sharing my R progress.
 
 [ggdark](https://github.com/nsgrantham/ggdark)
 
-[skimr](https://github.com/ropensci/skimr)
-
 [leaflet](https://rstudio.github.io/leaflet/)
 
 [lemon](https://github.com/stefanedwards/lemon)
+
+[ggchicklet](https://github.com/hrbrmstr/ggchicklet)
 
