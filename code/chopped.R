@@ -28,6 +28,9 @@ desserts <- chopped %>%
   unnest(ingredient) %>% 
   mutate(ingredient = gsub("[[:punct:]]","" , ingredient)) 
 
+# Combine all the ingredients into one dataframe
+all_ingredients <- bind_rows(appetizers[c(4, 22)], entrees[c(4, 22)], desserts[c(4, 22)])
+
 # Top 50 (ish) ingredients by round
 top_apps <- appetizers %>% 
   count(ingredient) %>%
@@ -40,9 +43,6 @@ top_entree <- entrees %>%
 top_dessert <- desserts %>% 
   count(ingredient) %>%
   slice_max(order_by = n, n = 50)
-
-# Combine all the ingredients into one dataframe
-all_ingredients <- bind_rows(appetizers[c(4, 22)], entrees[c(4, 22)], desserts[c(4, 22)])
 
 # Top 50 ingredients across all rounds
 top_ingredients <- all_ingredients %>% 
