@@ -53,6 +53,7 @@ top_crops_2018 <- top_crops %>%
   filter(Year == "2018") %>%
   left_join(world, ., by = "name") %>% 
   filter(name != "Antarctica")
+  
 
 colors <- carto_pal(9, "Prism")
 
