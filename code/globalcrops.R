@@ -74,8 +74,10 @@ p1 <- ggplot(top_crops_1961) +
 p2 <- ggplot(top_crops_2018) +
   geom_sf(aes(fill = crop), color = NA) +
   scale_fill_manual(values = colors, 
-                    breaks = c("Bananas", "Cassava", "Maize", "Potatoes", "Rice", "Wheat", "Barley", "Beans", "Soybeans"),
-                    na.value = "grey50") +
+                    breaks = c("Bananas", "Cassava", "Maize", "Potatoes", "Rice", "Wheat", "Barley", "Beans"),
+                    limits = c("Bananas", "Cassava", "Maize", "Potatoes", "Rice", "Wheat", "Barley", "Beans"),
+                    na.value = "grey50"
+                    ) +
   theme_ft_rc() +
   theme(
     axis.text.x = element_blank(),
