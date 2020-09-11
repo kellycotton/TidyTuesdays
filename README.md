@@ -53,3 +53,5 @@ Learning and sharing my R progress.
 
 [ggchicklet](https://github.com/hrbrmstr/ggchicklet)
 
+[calecopal](https://github.com/an-bui/calecopal)
+
