@@ -5,6 +5,6 @@ account: kellycotton
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 2814158
-bundleId: 3632303
+bundleId: 3632718
 url: https://kellycotton.shinyapps.io/gov_spending/
-when: 1600191909.6123
+when: 1600200148.70022

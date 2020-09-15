@@ -64,11 +64,11 @@ server <- function(input, output) {
             filter(variable == input$var) %>% 
             filter(year == input$year) 
         kids_data <- geo_join(states, kids_data, "NAME", "state", how = "inner")
-        subset(kids_data, !is.na(raw))
+        subset(kids_data, !is.na(input$adjust))
     })
     output$leaf <- renderLeaflet({
         data <- data_filter()
-        popup_kids <- paste0("Annual Spending: $", as.character(round(data[[input$adjust]], digits = 2)))
+        popup_kids <- paste0(as.character(data$NAME), ", Annual Spending: $", as.character(round(data[[input$adjust]], digits = 2)))
         pal <- colorNumeric("PuBuGn", domain=data[[input$adjust]])
         leaflet() %>% 
             addProviderTiles("CartoDB.Positron") %>%
