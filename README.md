@@ -37,7 +37,7 @@ Learning and sharing my R progress.
 [skimr](https://github.com/ropensci/skimr)
 
 
-**Packages I haven't used yet but think are neat:**
+**Packages I haven't used yet but think are neat and would also like to remember in the future:**
 
 [geofacet](https://github.com/hafen/geofacet)
 
@@ -54,4 +54,6 @@ Learning and sharing my R progress.
 [ggchicklet](https://github.com/hrbrmstr/ggchicklet)
 
 [calecopal](https://github.com/an-bui/calecopal)
+
+[gt](https://gt.rstudio.com/)
 
