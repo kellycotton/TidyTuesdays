@@ -2,7 +2,7 @@
 
 Learning and sharing my R progress. 
 
-[![]](https://github.com/kellycotton/TidyTuesdays/blob/master/Plots/rating.png)
+![](Plots/rating.png)
 
 **Packages I have used and would like to remember in the future:**
 
