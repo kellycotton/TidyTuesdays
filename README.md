@@ -2,7 +2,7 @@
 
 Learning and sharing my R progress. 
 
-![](Plots/rating.png){:height="50%" width="50%"}
+[![](Plots/rating.png?v=4&s=200)](https://github.com/kellycotton/TidyTuesdays/blob/master/code/TheOffice.R)
 
 **Packages I have used and would like to remember in the future:**
 
