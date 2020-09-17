@@ -3,32 +3,33 @@
 Learning and sharing my R progress. 
 
 
-<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/fixed_crops.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/fixed_crops.png" width=25% height=25%>
+<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/fixed_crops.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/fixed_crops.png" width=30% height=30%>
   
-[code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/plants.R)
+[Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/plants.R)
   
-<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/chopped.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/chopped.png" width=25% height=25%>
-[code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/chopped.R)
+<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/chopped.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/chopped.png" width=30% height=30%>
 
-<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/plantextinction.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/plantextinction.png" width=25% height=25%>
+[Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/chopped.R)
 
-[code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/plants.R)
+<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/plantextinction.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/plantextinction.png" width=30% height=30%>
+
+[Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/plants.R)
   
-<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/penguins.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/penguins.png" width=25% height=25%>
+<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/penguins.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/penguins.png" width=30% height=30%>
 
-[code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/penguins.R)
+[Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/penguins.R)
   
-<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/ageplot.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/ageplot.png" width=25% height=25%>
+<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/ageplot.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/ageplot.png" width=30% height=30%>
 
-[code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/astro.R)
+[Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/astro.R)
   
-<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/sentimentsong.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/sentimentsong.png" width=25% height=25%>
+<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/sentimentsong.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/sentimentsong.png" width=30% height=30%>
 
-[code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/rap.R)
+[Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/rap.R)
   
-<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/rating.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/rating.png" width=25% height=25%>
+<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/rating.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/rating.png" width=30% height=30%>
 
-[code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/TheOffice.R)
+[Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/TheOffice.R)
 
 **Packages I have used and would like to remember in the future:**
 
