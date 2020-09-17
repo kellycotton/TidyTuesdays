@@ -2,7 +2,7 @@
 
 Learning and sharing my R progress. 
 
-![](Plots/rating.png)
+![](Plots/rating.png){:height="50%" width="50%"}
 
 **Packages I have used and would like to remember in the future:**
 
