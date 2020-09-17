@@ -2,7 +2,7 @@
 
 Learning and sharing my R progress. 
 
-[![](Plots/rating.png?v=2&s=50)](https://github.com/kellycotton/TidyTuesdays/blob/master/code/TheOffice.R)
+<a href="https://github.com/kellycotton/TidyTuesdays/blob/master/code/TheOffice.R"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/rating.png" width=50% height=50%>
 
 **Packages I have used and would like to remember in the future:**
 
