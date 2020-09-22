@@ -2,6 +2,9 @@
 
 Learning and sharing my R progress. 
 
+<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/himalayas.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/himalayas.png" width=30% height=30%>
+  
+[Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/himalayas.R)
 
 <a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/fixed_crops.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/fixed_crops.png" width=30% height=30%>
   
