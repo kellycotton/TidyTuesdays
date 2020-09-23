@@ -41,5 +41,5 @@ Learning and sharing my R progress.
 
 **Packages I haven't used yet but think are neat and would also like to remember in the future:**
 
-[geofacet](https://github.com/hafen/geofacet), [tricolore](https://github.com/jschoeley/tricolore), [ggtern](http://www.ggtern.com/), [ggdark](https://github.com/nsgrantham/ggdark), [lemon](https://github.com/stefanedwards/lemon), [ggchicklet](https://github.com/hrbrmstr/ggchicklet), [calecopal](https://github.com/an-bui/calecopal), [gt](https://gt.rstudio.com/)
+[geofacet](https://github.com/hafen/geofacet), [tricolore](https://github.com/jschoeley/tricolore), [ggtern](http://www.ggtern.com/), [ggdark](https://github.com/nsgrantham/ggdark), [lemon](https://github.com/stefanedwards/lemon), [ggchicklet](https://github.com/hrbrmstr/ggchicklet), [calecopal](https://github.com/an-bui/calecopal), [gt](https://gt.rstudio.com/), [flipbookr](https://github.com/EvaMaeRey/flipbookr)
 
