@@ -2,6 +2,10 @@
 
 Learning and sharing my R progress. 
 
+<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/top_beers.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/top_beers.png" width=30% height=30%>
+
+[Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/beer_awards.R)
+
 <a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/beyonce.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/beyonce.png" width=30% height=30%>
 
 [Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/beyonce.R)
