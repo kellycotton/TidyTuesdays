@@ -45,8 +45,8 @@ mobile %>%
     axis.text.y = element_text(hjust = 1, vjust = .5, lineheight = .7)
     ) +
   labs(title = "Global Mobile Phone Adoption",
-       subtitle = "Number of mobile phone subscriptions per 100 people",
+       subtitle = "Number of mobile phone subscriptions per 100 people in 2017",
        caption = "Created by @kllycttn, Data from OurWorldInData.org, #TidyTuesday"
        )
 
-#ggsave("phoneplot.png", width = 15, height = 10)
+#ggsave("Plots/phoneplot.png", width = 15, height = 10)
