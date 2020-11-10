@@ -3,6 +3,7 @@
 Learning and sharing R progress. 
 
 <a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/phoneplot.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/phoneplot.png" width=30% height=30%>
+  
 [Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/phones.R)
 
 <a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/top_beers.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/top_beers.png" width=30% height=30%>
