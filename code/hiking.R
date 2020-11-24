@@ -1,0 +1,36 @@
+# Setup----
+library(tidyverse)
+library(tidytext)
+library(hrbrthemes)
+
+hike_data <- readr::read_rds(url('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-11-24/hike_data.rds'))
+
+# Get individual words in trail names 
+names <- hike_data %>% 
+  mutate(name = gsub("[[:punct:]]", "", as.character(name))) %>% #remove punctuation
+  mutate(name = strsplit(as.character(name), " ")) %>% #split trail names into individual words
+  unnest(name) %>% 
+  filter(!str_detect(name, "[[:digit:]]")) %>% #remove numbers
+  filter(name != "") %>% #remove space names
+  anti_join(stop_words, by = c("name" = "word")) %>% #remove common words like and, the, etc.
+  count(name)
+
+names %>% 
+  slice_max(order_by = n, n = 25) %>% 
+  ggplot(aes(x = name, y = n, color = name, group = 1)) +
+  geom_line(size = 1) + geom_point(size = .3) +
+  geom_segment(aes(xend = name, y = 0, yend = n), linetype = "dotdash", alpha = .25) +
+  scale_color_manual(values = calecopal::cal_palette("arbutus", n = 26, type = "continuous")) +
+  theme_ft_rc() +
+  scale_y_continuous(breaks = c(50, 100, 150, 200, 250, 300, 350), name = "Number of Occurrences") +
+  theme(legend.position = "none",
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        axis.title.x = element_blank(),
+        axis.text.x = element_text(size = 7)) +
+  labs(title = "Hiking the Creek Lake Mountain Trail",
+       subtitle = "Most Common Words in Washington State Trail Names",
+       caption = "Created by @kllycttn, Data from Washington Trails Association, #TidyTuesday")
+  
+#ggsave("Plots/trailnames.png", dpi = 300, width = 10)
+  
