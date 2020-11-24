@@ -2,6 +2,10 @@
 
 Learning and sharing R progress. 
 
+<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/trailnames.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/trailnames.png" width=30% height=30%>
+  
+[Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/hiking.R)
+
 <a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/phoneplot.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/phoneplot.png" width=30% height=30%>
   
 [Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/phones.R)
