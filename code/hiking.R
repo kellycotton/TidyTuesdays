@@ -37,6 +37,7 @@ names %>%
   
 # Generate trail name
 name_generator <- function(n_words) {
+  names <- names %>% filter(!name %in% c("Trail", "Trails"))
   words <- sample_n(names, n_words)[1]
   new_name <- paste("Your personalized Washington State trail name is: ", sapply(words, paste, collapse = " "), "Trail.")
   return (new_name)
