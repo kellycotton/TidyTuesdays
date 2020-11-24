@@ -30,7 +30,7 @@ names %>%
         axis.title.x = element_blank(),
         axis.text.x = element_text(size = 7)) +
   labs(title = "Hiking the Creek Lake Mountain Trail",
-       subtitle = "Most Common Words in Washington State Trail Names",
+       subtitle = "Most common words in Washington State trail names",
        caption = "Created by @kllycttn, Data from Washington Trails Association, #TidyTuesday")
   
 #ggsave("Plots/trailnames.png", dpi = 300, width = 10)
