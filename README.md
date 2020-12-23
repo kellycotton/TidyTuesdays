@@ -2,54 +2,61 @@
 
 Learning and sharing R progress. 
 
-<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/trailnames.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/trailnames.png" width=30% height=30%>
+<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/code/2020-12-23_BigMacIndex/bigmac.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/code/2020-12-23_BigMacIndex/bigmac.png" width=30% height=30%>
   
-[Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/hiking.R)
+[Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/2020-12-23_BigMacIndex/bigmac.R)
 
-<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/phoneplot.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/phoneplot.png" width=30% height=30%>
+<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/code/2020-12-01_Shelters/shelters.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/code/2020-12-01_Shelters/shelters.png" width=30% height=30%>
   
-[Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/phones.R)
+[Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/2020-12-01_Shelters/shelters.R)
 
-<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/top_beers.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/top_beers.png" width=30% height=30%>
-
-[Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/beer_awards.R)
-
-<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/beyonce.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/beyonce.png" width=30% height=30%>
-
-[Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/beyonce.R)
-
-
-<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/himalayas.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/himalayas.png" width=30% height=30%>
+<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/code/2020-11-24_Hiking/trailnames.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/code/2020-11-24_Hiking/trailnames.png" width=30% height=30%>
   
-[Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/himalayas.R)
+[Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/2020-11-24_Hiking/hiking.R)
 
-<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/fixed_crops.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/fixed_crops.png" width=30% height=30%>
+<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/code/2020-11-10_Phones/phoneplot.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/code/2020-11-10_Phones/phoneplot.png" width=30% height=30%>
   
-[Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/plants.R)
+[Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/2020-11-10_Phones/phones.R)
+
+<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/code/2020-10-20_BeerAwards/top_beers.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/code/2020-10-20_BeerAwards/top_beers.png" width=30% height=30%>
+
+[Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/2020-10-20_BeerAwards/beer_awards.R)
+
+<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/code/2020-09-29_Beyonce/beyonce.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/code/2020-09-29_Beyonce/beyonce.png" width=30% height=30%>
+
+[Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/2020-09-29_Beyonce/beyonce.R)
+
+<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/code/2020-09-22_HimalayanClimbers/himalayas.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/code/2020-09-22_HimalayanClimbers/himalayas.png" width=30% height=30%>
   
-<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/chopped.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/chopped.png" width=30% height=30%>
+[Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/2020-09-22_HimalayanClimbers/himalayas.R)
 
-[Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/chopped.R)
-
-<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/plantextinction.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/plantextinction.png" width=30% height=30%>
-
-[Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/plants.R)
+<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/code/2020-09-01_Crops/fixed_crops.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/code/2020-09-01_Crops/fixed_crops.png" width=30% height=30%>
   
-<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/penguins.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/penguins.png" width=30% height=30%>
-
-[Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/penguins.R)
+[Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/2020-09-01_Crops/globalcrops.R)
   
-<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/ageplot.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/ageplot.png" width=30% height=30%>
+<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/code/2020-08-25_Chopped/chopped.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/code/2020-08-25_Chopped/chopped.png" width=30% height=30%>
 
-[Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/astro.R)
+[Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/2020-08-25_Chopped/chopped.R)
+
+<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/code/2020-08-18_ExtinctPlants/plantextinction.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/code/2020-08-18_ExtinctPlants/plantextinction.png" width=30% height=30%>
+
+[Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/2020-08-18_ExtinctPlants/plants.R)
   
-<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/sentimentsong.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/sentimentsong.png" width=30% height=30%>
+<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/code/2020-07-28_Penguins/penguins.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/code/2020-07-28_Penguins/penguins.png" width=30% height=30%>
 
-[Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/rap.R)
+[Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/2020-07-28_Penguins/penguins.R)
   
-<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/rating.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/Plots/rating.png" width=30% height=30%>
+<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/code/2020-07-14_Astronauts/ageplot.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/code/2020-07-14_Astronauts/ageplot.png" width=30% height=30%>
 
-[Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/TheOffice.R)
+[Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/2020-07-14_Astronauts/astro.R)
+  
+<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/code/2020-04-14_Rap/sentimentsong.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/code/2020-04-14_Rap/sentimentsong.png" width=30% height=30%>
+
+[Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/2020-04-14_Rap/rap.R)
+  
+<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/code/2020-03-17_TheOffice/rating.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/code/2020-03-17_TheOffice/rating.png" width=30% height=30%>
+
+[Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/2020-03-17_TheOffice/TheOffice.R)
 
 **Packages I have used and would like to remember in the future:**
 
