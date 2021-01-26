@@ -7,7 +7,6 @@ library(tidyverse)
 library(rnaturalearth)
 library(sf)
 
-showtext::sho
 # Read data
 plastics <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-01-26/plastics.csv')
 world <- ne_countries(scale = "medium", returnclass = "sf") 
