@@ -2,6 +2,10 @@
 
 Learning and sharing R progress. 
 
+<a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/code/2021-01-26_Plastic/plastic.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/code/2021-01-26_Plastic/plastic.png" width=30% height=30%>
+  
+[Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/2021-01-26_Plastic/plastic.R)
+
 <a href="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/code/2021-01-11_Art/art.png"><img src="https://raw.githubusercontent.com/kellycotton/TidyTuesdays/master/code/2021-01-11_Art/art.png" width=30% height=30%>
   
 [Code](https://github.com/kellycotton/TidyTuesdays/blob/master/code/2021-01-11_Art/art.R)
