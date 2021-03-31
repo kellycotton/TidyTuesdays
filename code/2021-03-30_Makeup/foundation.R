@@ -152,7 +152,8 @@ ggplot(data_ggplot) +
                 reflow = TRUE) +
   scale_fill_identity() +
   labs(title = "What are the most common foundation names?",
-       subtitle = "And what color best represents them? Each box represents a foundation name, larger boxes indicate more foundations with that name. The color represents the median shade of that name.",
+       subtitle = "And what color best represents them? Each box represents a foundation name, larger boxes indicate more foundations with that name. 
+The color represents the median shade of that name.",
        caption = "Created by @kllycttn | Data from The Pudding | #TidyTuesday") +
   theme_void() +
   theme(
