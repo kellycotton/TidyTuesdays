@@ -15,6 +15,7 @@ top_names <- allCategories %>%
   slice_max(n = 20, order_by = count) %>% 
   pull(name)
 
+# Mode shade ----
 # Find the most common Hex code associated with the top names
 top_shades <- allCategories %>% 
   filter(name %in% top_names) %>% 
@@ -50,7 +51,8 @@ data_ggplot <- data_tree[["tm"]] %>%
          xmax = x0 + w,
          ymax = y0 + h,
          label_name = str_glue("{name}\n({vSize})"))
-  
+
+# Plotting -----  
 ggplot(data_ggplot) +
   geom_rect(aes(xmin = x0,
                 ymin = y0,
@@ -84,6 +86,8 @@ The color represents the most common shade associated with that name. Some found
 
 ggsave("foundation.png")
 
+
+# Median shade -----
 
 # Re-do with average shade instead of "most representative shade"! Shoutout to @MStrasiotto and Stack Overflow
 top_shades <- allCategories %>% 
@@ -131,6 +135,8 @@ data_ggplot <- data_tree[["tm"]] %>%
          ymax = y0 + h,
          label_name = str_glue("{name}\n({vSize})"))
 
+# Plotting -----  
+
 ggplot(data_ggplot) +
   geom_rect(aes(xmin = x0,
                 ymin = y0,
@@ -164,6 +170,7 @@ The color represents the median shade of that name.",
 
 ggsave("foundation2.png")
 
+# Mean shades ----
 
 # Since the first was really the mode and the second was the median, why not do the mean for all measures of central tendency
 top_shades <- allCategories %>% 
@@ -210,6 +217,8 @@ data_ggplot <- data_tree[["tm"]] %>%
          xmax = x0 + w,
          ymax = y0 + h,
          label_name = str_glue("{name}\n({vSize})"))
+
+# Plotting -----  
 
 ggplot(data_ggplot) +
   geom_rect(aes(xmin = x0,
