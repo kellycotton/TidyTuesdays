@@ -45,13 +45,15 @@ ggplot(catchphrases, aes(x = decade, y = per_ep, fill = phrase)) +
            label = "\"Jinkies\" had the highest mean count: 3.7 times per episode in the 90s.",
            x = 2008,
            y = 7.5,
-           family = "Scooby Doo"
+           family = "Scooby Doo",
+           size = 2.5
   ) +
   annotate("text",
            label = "In the 80s, \"Groovy\" and \"Jeepers\" were never said.",
            x = 1973,
            y = 5,
-           family = "Scooby Doo"
+           family = "Scooby Doo",
+           size = 2.5
   ) +
   geom_curve(
     data = arrows, aes(x = x1, y = y1, xend = x2, yend = y2),
@@ -59,19 +61,21 @@ ggplot(catchphrases, aes(x = decade, y = per_ep, fill = phrase)) +
     color = "gray20", curvature = -0.3, 
     inherit.aes = FALSE
   ) +
-  labs(title = "If it wasn't for those meddling catchphrases...", 
-       subtitle = "", 
+  labs(title = "Scooby Doo, where are you?", 
+       subtitle = "If it wasn't for those meddling catchphrases...", 
        caption = "Created by @kllycttn | Data from Kaggle & plummye | #TidyTuesday") +
   theme_light() +
   theme(
     plot.title = element_text(family = "Flowers Kingdom", size = 20),
+    plot.subtitle = element_text(size = 15),
     panel.grid.minor = element_blank(),
     panel.grid.major.x = element_blank(),
     text = element_text(family = "Scooby Doo"),
     legend.position = c(.85, .77),
-    legend.text = element_text(size = 18),
-    axis.text = element_text(size = 14)
+    legend.text = element_text(size = 16),
+    axis.text = element_text(size = 13)
   ) 
   
+ggsave(here::here("code", "2021-07-14_Scooby", "scooby.png"), width = 9, height = 6.5, units = "in")
 
 
