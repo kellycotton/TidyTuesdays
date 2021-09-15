@@ -39,19 +39,21 @@ ggplot(valence_dance, aes(x = dance, y = valence, color = spotify_genre)) +
               label_params = list(size = 4)) +
   labs(title = "Is happier music more danceable?", 
        subtitle = "Danceability represents how suitable a track is for dancing by combining 
-musical elements including tempo, rhythm stability, beat strength, and overall regularity. A higher 
-<br>value means the track is more danceable. Valence describes the musical positiveness conveyed 
-by the track, with a higher valence indicating more positivity. Some genres 
-<br>like <span style = 'color:#88AB75;'>**old school hip hop**</span>
-are both highly danceable and pretty positive. Other genres are highly positive but less danceable, 
-like <span style = 'color:#DBD56E;'>**postpunk**</span>, or less positive and less danceable, 
-<br>like <span style = 'color:#2D93AD;'>**vocal jazz**</span>.", 
+musical elements including tempo, rhythm stability, 
+<br>beat strength, and overall regularity. A higher value means the track is more danceable. Valence describes the musical
+<br> positiveness conveyed by the track, with a higher valence indicating more positivity. Some genres like <span style = 'color:#88AB75;'>**old school hip hop**</span> are 
+<br>both highly danceable and pretty positive. Other genres are highly positive but less danceable, 
+like <span style = 'color:#DBD56E;'>**postpunk**</span>, or less positive 
+<br>and less danceable, like <span style = 'color:#2D93AD;'>**vocal jazz**</span>.", 
        caption = "Created by @kllycttn | Data from Spotify | #TidyTuesday") +
   xlab("Danceability") + ylab("Valence") +
   theme(
     plot.title = element_text(family = "Lato", face = "bold", size = 25),
     plot.subtitle = ggtext::element_markdown(lineheight = .2),
-    plot.caption = element_text(size = 7)
+    plot.caption = element_text(size = 7),
+    panel.grid.major.x = element_blank(), 
+    panel.grid.major.y = element_blank()
   )
 
+ggsave(here::here("code", "2021-09-14_Spotify", "danceable.png"), width = 9, height = 6.5, units = "in", bg = "white")
 
